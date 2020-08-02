@@ -1,9 +1,5 @@
-# -*- coding: utf-8 -*-
-
 import cv2
 print('Project Topic : Vehicle Classification')
-print('Research Internship on Machine learning using Images')
-print('By Aditya Yogish Pai and Aditya Baliga B')
 
 video_src = 'pedestrians.avi'
 
@@ -13,8 +9,7 @@ bike_cascade = cv2.CascadeClassifier('pedestrian.xml')
 
 while True:
     ret, img = cap.read()
-	
-    
+	    
     if (type(img) == type(None)):
         break
     
